@@ -1,5 +1,7 @@
 body {
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .main-content {
@@ -11,17 +13,39 @@ body {
 aside {
     overflow: hidden;
     height: 100vh;
-    width: 300px;
+    width: 40vw;
 }
 
+.form-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    column-gap: 5vw;
+    padding-right: 25vw;
+    background-color: blue;
+
+    height: 20vh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+
+}
 
 header {
     background-color: green;
     height: 33vh;
 }
 
-section {
+.submission {
     background-color: red;
-    height: 33vh;
+    flex: 1;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    height: 67vh;
+}

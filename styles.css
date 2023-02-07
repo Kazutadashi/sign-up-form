@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Helvetica, sans-serif, Arial;
+    background-color: rgb(250, 250, 250);
 }
 aside {
     overflow: hidden;
@@ -15,18 +16,23 @@ header {
     justify-content: flex-end;
     flex-direction: column;
 
-    padding: 0 0 50px 45px;
+    padding: 0 20vw 50px 45px;
 
     background-color: rgb(250, 250, 250);
     height: 40vh;
-
 }
+
+h1 {
+    font-size: 3.0vh;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
 
 }
 form {
+    
     display: flex;
     flex-direction: column;
     height: 60vh;

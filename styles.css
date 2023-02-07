@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "KaiTi";
+    src:    url("fonts/simkai.woff2"),
+            url("fonts/simkai.woff");
+}
+
+@font-face {
+    font-family: "Cursive";
+    src:    url("fonts/aAntaraDistance.woff2"),
+            url("fonts/aAntaraDistance.woff");
+}
+
+
 body {
     display: flex;
     padding: 0;
@@ -12,12 +25,31 @@ aside {
     width: 43vw;
 }
 
-aside span {
+aside > span {
     position: absolute;
     bottom: 0;
     left: 30%;
     font-size: .8rem;
     margin-bottom: 10px;
+    color: rgba(255, 255, 255, .8);  
+}
+
+.transparent-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 24px 0;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    font-size: 4rem;
+    font-family: "Kaiti";
+}
+
+.transparent-bg span+span {
+    font-family: 'Cursive';
 }
 
 img {
@@ -106,7 +138,7 @@ a[href='#']:visited {
 }
 
 a[href*="imgur"]{
-    color: black;  
+    color: rgba(255, 255, 255, .8);  
 }
 
 button[type='submit'] {

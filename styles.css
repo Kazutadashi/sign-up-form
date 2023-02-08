@@ -182,7 +182,8 @@ because nothing has been entered yet. */
     border-radius: 2px;
 }
 
-.form-box input:placeholder-shown:invalid:focus-visible {
+.form-box input:placeholder-shown:invalid:focus-visible,
+.form-box input:placeholder-shown:invalid:hover {
     background-color: rgba(221, 192, 153, .3);
 }
 

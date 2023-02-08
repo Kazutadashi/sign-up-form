@@ -115,7 +115,8 @@ form > p {
     letter-spacing: .1rem;
 }
 .form-box input {
-    height: 1.5rem;
+    height: 2.5rem;
+    margin-top: 5px;
     appearance: none;
     outline: none;
     background-color: white;

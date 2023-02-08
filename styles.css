@@ -169,7 +169,10 @@ button[type='submit']:hover {
 /* if the placeholder is shown AND the field is currently invalid, set it to white
 because nothing has been entered yet. */
 .form-box input:placeholder-shown:invalid {
+    appearance: none;
     background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
 }
 
 /* if there is text in the input but its still invalid, then set it to red */

@@ -116,10 +116,17 @@ form > p {
 }
 .form-box input {
     height: 1.5rem;
+    appearance: none;
+    outline: none;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2px;
 }
-.form-box input:hover,
-.form-box input:focus {
-    background-color: rgba(221, 192, 153, .2);
+
+.form-box input:focus-visible,
+.form-box input:hover {
+    background-color: rgba(221, 192, 153, .3);
+    outline: 1px solid black;
 }
 .submission {
     flex: 1;
@@ -175,8 +182,13 @@ because nothing has been entered yet. */
     border-radius: 2px;
 }
 
+.form-box input:placeholder-shown:invalid:focus-visible {
+    background-color: rgba(221, 192, 153, .3);
+}
+
 /* if there is text in the input but its still invalid, then set it to red */
 .form-box input:invalid {
+    appearance: none;
     background-color: rgba(255, 0, 0, 0.2);
     border: 1px solid gray;
     border-radius: 2px;

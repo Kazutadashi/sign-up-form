@@ -166,8 +166,15 @@ button[type='submit']:hover {
     background-color: rgb(170, 146, 114);
 }
 
-/* Psuedo classed */
+/* if the placeholder is shown AND the field is currently invalid, set it to white
+because nothing has been entered yet. */
+.form-box input:placeholder-shown:invalid {
+    background-color: white;
+}
+
+/* if there is text in the input but its still invalid, then set it to red */
 .form-box input:invalid {
     background-color: rgba(255, 0, 0, 0.2);
 }
+
 

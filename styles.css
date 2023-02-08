@@ -178,6 +178,8 @@ because nothing has been entered yet. */
 /* if there is text in the input but its still invalid, then set it to red */
 .form-box input:invalid {
     background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid gray;
+    border-radius: 2px;
 }
 
 
